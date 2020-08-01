@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kabeers&nbsp;Notes&nbsp;-&nbsp;Smart&nbsp;for&nbsp;your&nbsp;needs</title>
+    <meta name="description" content="Kabeer Jaffri at Kabeers Network">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="vendor/compiled/main.css">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/dist/css/bootstrap.lite.css">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/dist/css/bootstrap-utilities.min.css">
+    <style>
+        .material-divider {
+            border: 0.2px solid #F3F3F3 !important;
+        }
+    </style>
+    <link rel="stylesheet" href="vendor/mat-icons/material-icons.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-touch-icon-152x152.png">
+    <!--<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon-180x180.png">-->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#f8f8f8">
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#FFC400">
+    <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#FFC400">
+</head>
+<body style="scroll-behavior: smooth;">
+<div id="preloader"
+     style="position: fixed;display:block;z-index: 200002; width: 100%;height: 100%;background-image: linear-gradient(#eee,#eee);background-repeat: no-repeat;background-size: cover;"
+     class="text-center">
+    <div class="md-preloader bg-light">
+        <div role="progressbar" class="mdc-linear-progress mdc-linear-progress--indeterminate">
+            <div class="mdc-linear-progress__buffering-dots"></div>
+            <div class="mdc-linear-progress__buffer"></div>
+            <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar"><span
+                    class="mdc-linear-progress__bar-inner"></span></div>
+            <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar"><span
+                    class="mdc-linear-progress__bar-inner"></span></div>
+        </div>
+    </div>
+    <div style="margin-top: 30vh;padding-left: 10%;padding-right: 10%">
+        <noscript>Sorry, This App Requires Javascript to Work</noscript>
+        <br>
+        <div class="no-browser-support">Additionally, Your Browser Doesn't Support the Web Speech API. Some Features
+            Won't Work.
+        </div>
+    </div>
+</div>
+<aside class="mdc-drawer mdc-drawer--modal">
+    <div class="mdc-drawer__content">
+        <div style="width: 100%;height: 8rem">
+            <span class="text-light position-absolute display-4 mt-5 pt-4 px-4">
+                <span>
+                    <img src="https://ui-avatars.com/api/?color=FFFFFF&background=FF0303&format=png&size=250&rounded=true&length=2&name=Kabeer%20Jaffri" style="width:2.5rem;margin-bottom: -0.5rem">
+                </span>
+                <small style="margin-bottom: 1rem;padding-bottom: 1rem;"><span class="user_name"></span></small>
+                <span
+                    class="user_id_drawer small"
+                    style="font-size: 1rem;margin-top: -1rem"></span></span>
+            <div style="background-color: #FFC400; width: 100%;height:8rem"></div>
+        </div>
+        <nav class="mdc-list">
+            <a class="mdc-list-item mdc-list-item--activated" href="#" aria-selected="true">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
+                <span class="mdc-list-item__text">Home</span>
+            </a>
+            <hr class="material-divider divider border">
+            <a class="mdc-list-item" href="legal.html">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">policy</i>
+                <span class="mdc-list-item__text">Legal</span>
+            </a>
+            <a class="mdc-list-item" href="opensource.html">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">source</i>
+                <span class="mdc-list-item__text">Open Source</span>
+            </a>
+            <a class="mdc-list-item settings-show" aria-label="Favorite">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">settings</i>
+                <span class="mdc-list-item__text">Settings</span>
+            </a>
+            <hr class="material-divider divider border">
+            <div class="mdc-list-item">
+                <div class="mdc-list-item__text k_auth_btn text-muted">&copy;&nbsp;<span class="year"></span>&nbsp;Kabeers
+                    Network<br><a href="http://policies.kabeersnetwork.rf.gd/apps/notes/"><small>Privacy</small></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</aside>
+<div class="mdc-drawer-scrim"></div>
+<header class="mdc-top-app-bar app-bar" id="app-bar">
+    <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button mat-drawer-btn-k text-light">
+                menu
+            </button>
+            <span class="mdc-top-app-bar__title">Notes</span>
+            <span class="fill-space" style="flex: 1 1 auto;"></span>
+            <button class="mdc-icon-button material-icons text-light" onclick="sync_now()">sync</button>
+            <button class="mdc-icon-button material-icons text-light refresh" onclick="refresh()">refresh</button>
+            <button class="mdc-icon-button material-icons text-light" data-toggle="modal" data-target="#search"
+                    aria-label="Favorite">search
+            </button>
+        </section>
+    </div>
+</header>
+<div class="mdc-drawer-app-content mdc-top-app-bar--fixed-adjust">
+    <main class="main-content" id="main-content">
+        <div class="container pt-0">
+            <div class="row">
+                <small class="text-muted no-browser-support">Sorry, Your Browser Doesn't Support the Web Speech API.
+                    Some Features Won't Work.</small>
+                <div class="app">
+                    <div>
+                        <div class="row text-left" id="notes">
+                            <p class="no-notes">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<div class="k_fab" style="position: fixed;bottom: 3%;right: 2.5%">
+    <button class="mdc-fab add-new-note" onclick="window.location.href='#new';" style="background-color: #FFC400"
+            aria-label="Favorite">
+        <div class="mdc-fab__ripple"></div>
+        <span class="mdc-fab__icon text-light material-icons">add</span>
+    </button>
+</div>
+<!-- Add New Note Screen -->
+<div class="modal k-slide-up" id="addNewNote" tabindex="-1" role="dialog" aria-labelledby="addNewNoteLabel"
+     aria-hidden="true">
+    <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
+        <div class="modal-content-full-width modal-content ">
+            <div class="p-0 m-0">
+                <header class="mdc-top-app-bar modal-appbar">
+                    <div class="mdc-top-app-bar__row">
+                        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                            <button data-dismiss="modal"
+                                    class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button"
+                                    aria-label="Open navigation menu">close
+                            </button>
+                            <span class="mdc-top-app-bar__title">Add New Note</span>
+                        </section>
+                        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+                            <button id="start-record-btn"
+                                    class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
+                                    aria-label="Options">mic
+                            </button>
+                        </section>
+                    </div>
+                </header>
+            </div>
+            <div class="modal-body" style="margin-top:1.25rem">
+                <div class="input-single">
+                    <div class="px-1 mx-1 d-flex justify-content-center">
+                        <textarea maxlength="1600" height="100vw" id=note-textarea class="form-control textarea main-textarea char-counter" placeholder="Create a new note by typing or using voice recognition." rows=6></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer-full-width modal-footer p-0 px-2 bottom-nav bg-light border-top"
+                 style="height:3.5rem;">
+                <div class="mr-auto">
+                    <span id="recording-instructions">Tap to Enable Voice</span>
+                    <!--<button id="save-note-btn" class="border mx-1 bg-light rounded-circle mdc-icon-button material-icons" title="Save Note">save</button>-->
+                </div>
+                <div class="text-left">
+                    <div id="the-count" class="small text-muted char_count">
+                        <small>
+                            <span id="current">0</span>
+                            <span id="maximum">/ 1600</span>
+                        </small>
+                    </div>
+                </div>
+                <button id="save-note-btn" style="background-color: #FFC400" data-dismiss="modal" type="button"
+                        class="mdc-button mdc-button--outlined border-warning text-light">Save
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Search Screen -->
+<div class="modal k-slide-up" id="search" tabindex="-1" role="dialog" aria-labelledby="search" aria-hidden="true">
+    <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
+        <div class="modal-content-full-width modal-content ">
+            <div class="p-0 m-0">
+                <header class="mdc-top-app-bar modal-appbar ">
+                    <div class="mdc-top-app-bar__row bg-white shadow">
+                        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                            <button data-dismiss="modal"
+                                    class="close-addnew material-icons mdc-top-app-bar__navigation-icon mdc-icon-button text-dark"
+                                    style="color: #000!important;" aria-label="Open navigation menu">close
+                            </button>
+                            <input onclick="$('.mat-search-bar-icon').hide()" onblur="$('.mat-search-bar-icon').show()"
+                                   class="form-control w-100 border-none search-input" type="text"
+                                   placeholder="Search"/>
+                            <i class="material-icons mat-search-bar-icon text-dark px-1" style="color: #000!important;">search</i>
+                        </section>
+                    </div>
+                </header>
+            </div>
+            <div class="modal-body" style="margin-top:1.25rem">
+                <div class="input-single container-fluid">
+                    <div class="px-0 mx-0">
+                        <div class="search-container row" style="margin-top:2rem!important">
+                            <div style="width: 100%!important;height: 100%!important;">
+                                <div class="col-md-12 d-flex justify-content-center" style="margin-top: 35%!important;">
+                                    <img src="assets/icons/ic_launcher.png"
+                                         style="width: 10rem;height: auto;opacity:100%">
+                                </div>
+                                <div class="col-md-12">
+                                    <p class="text-center text-muted">Start Typing to Search</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Add New Note Screen -->
+<div class="modal settings-modal k-slide-up" onclick="window.location.hash='#settings'" id="settings" tabindex="-1" role="dialog" aria-labelledby="settings"
+     aria-hidden="true">
+    <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
+        <div class="modal-content-full-width modal-content ">
+            <div class="p-0 m-0">
+                <header class="mdc-top-app-bar modal-appbar">
+                    <div class="mdc-top-app-bar__row">
+                        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                            <button data-dismiss="modal"
+                                    class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button"
+                                    aria-label="Open navigation menu">close
+                            </button>
+                            <span class="mdc-top-app-bar__title">Settings</span>
+                        </section>
+                        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end"
+                                 role="toolbar"></section>
+                    </div>
+                </header>
+            </div>
+            <div class="modal-body" style="margin-top:2.5rem">
+                <div class="col-md-12"
+                     style="padding-top: 1.5em;padding-bottom: 0;margin-bottom: 0;position:static;margin-top:2rem">
+                    <ul id="listTWO_LINE" class="mdc-list mdc-list--two-line inline-demo-list">
+                        <li style="--mdc-ripple-fg-size:28px; --mdc-ripple-fg-scale:1.71429; --mdc-ripple-left:10px; --mdc-ripple-top:10px;"
+                            class="mdc-list-item mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"
+                            data-mdc-ripple-is-unbounded tabindex="-1">
+                  <span class="mdc-list-item__text">
+                  <span class="mdc-list-item__primary-text">
+                  Smart Compose &copy;
+                  </span>
+                  <span class="mdc-list-item__secondary-text">
+                  Predictive text when typing Note
+                  </span>
+                  </span>
+                            <span aria-hidden="true" class="mdc-list-item__meta">
+                            <div class="mdc-touch-target-wrapper px-3">
+                              <div class="mdc-checkbox mdc-checkbox--touch">
+                                <input type="checkbox"
+                                       class="mdc-checkbox__native-control"
+                                       id="cbx" onclick="smartCompose_save()"/>
+                                <div class="mdc-checkbox__background">
+                                  <svg class="mdc-checkbox__checkmark"
+                                       viewBox="0 0 24 24">
+                                    <path class="mdc-checkbox__checkmark-path"
+                                          fill="none"
+                                          d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                                  </svg>
+                                  <div class="mdc-checkbox__mixedmark"></div>
+                                </div>
+                                <div class="mdc-checkbox__ripple"></div>
+                              </div>
+                            </div>
+                          </span>
+                        </li>
+                        <li onclick="dE()" style="--mdc-ripple-fg-size:28px; --mdc-ripple-fg-scale:1.71429; --mdc-ripple-left:10px; --mdc-ripple-top:10px;"
+                            class="mdc-list-item mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"
+                            data-mdc-ripple-is-unbounded tabindex="-1">
+                  <span class="mdc-list-item__text">
+                  <span class="mdc-list-item__primary-text">
+                  Factory Reset
+                  </span>
+                  <span class="mdc-list-item__secondary-text">
+                  This will delete All Notes from this account.
+                  </span>
+                  </span>
+                            <span aria-hidden="true" class="mdc-list-item__meta">
+                            <div class="mdc-touch-target-wrapper px-3">
+                              <div class="mdc-checkbox mdc-checkbox--touch">
+
+                              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">delete</i>
+                            </div></div>
+                          </span>
+                        </li>
+
+                        <li style="--mdc-ripple-fg-size:28px; --mdc-ripple-fg-scale:1.71429; --mdc-ripple-left:10px; --mdc-ripple-top:10px;"
+                            class="mdc-list-item mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"
+                            data-mdc-ripple-is-unbounded tabindex="-1">
+                  <span class="mdc-list-item__text">
+                  <span class="mdc-list-item__primary-text">
+                  Account
+                  </span>
+                  <span class="mdc-list-item__secondary-text">
+                  Your Account For Notes
+                  </span>
+                  </span>
+                            <span aria-hidden="true" class="mdc-list-item__meta">
+                            <div class="mdc-touch-target-wrapper px-3">
+                              <div class="mdc-checkbox mdc-checkbox--touch">
+
+                              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">open_in_new</i>
+                            </div></div>
+                          </span>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="http://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+<script defer async src="vendor/fuse/fuse.basic.min.js"></script>
+<script async src="app.js"></script>
+<script defer async src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script defer async src="vendor/autoresize/auto-resize.min.js"></script>
+<script defer async type="text/javascript" src="vendor/pollyfills/localStorage.js"></script>
+<script defer async type="module" src="vendor/kabeers/pulltorefresh/pulltorefresh.umd.min.js"></script>
+<script defer async src="vendor/mdc/material-components-web.min.js"></script>
+<script defer async type="text/javascript">
+    window.onload = function () {
+
+        PullToRefresh.init({
+            mainElement: '#main-content',
+            onRefresh: function () {
+                setTimeout(function () {
+                    refresh();
+                }, 500);
+            }
+        });
+        window.mdc.autoInit();
+        try {
+            let drawer = mdc.drawer.MDCDrawer.attachTo(document.querySelector('.mdc-drawer')),
+                button = document.querySelector('.mat-drawer-btn-k');
+            button.addEventListener('click', function () {
+                drawer.open = true;
+            });
+            document.querySelector('.mdc-drawer-scrim').addEventListener('click', function () {
+                drawer.open = !1 ? drawer.open = !1 : $('.mdc-drawer').addClass('mdc-drawer--closing');
+            });
+        } catch (e) {
+        }
+        autosize(document.getElementById("note-textarea"));
+    }
+</script><!--
+<script defer src="vendor/kabeers/protectjs/protect.min.js"></script>-->
+<script defer async src="vendor/kabeers/smartcompose/SmartComposeTextarea.min.js"></script>
+<script type="module" defer async>
+    import {smartCompose} from './modules/smartcompose.js';
+
+    let smartCompose_settings = undefined;
+    const setSmartCompose = () => {
+        null == localStorage.getItem("smartcompose") ? localStorage.setItem("smartcompose", JSON.stringify("true")) : (smartCompose_settings = JSON.parse(JSON.parse(localStorage.getItem("smartcompose"))));
+    };
+    setSmartCompose();
+    if (smartCompose_settings) {
+        document.querySelector('.k_fab').addEventListener('click', async () => {
+            getPredictiveTextHelper(smartCompose);
+        });
+    }
+</script>
+</body>
+</html>

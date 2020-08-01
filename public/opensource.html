@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OpenSource Licences - Kabeers Notes</title>
+   <link rel="stylesheet" type="text/css" href="vendor/bootstrap.min.css">
+</head>
+<body style="background-color: #FAFAFA">
+<div class="navbar navbar-dark bg-warning mb-5 fixed-top">
+			<div class="navbar-brand text-center px-3">Licences
+				<small><small class="small"><small class="text-muted small">Kabeers Notes</small></small></small></div>
+		</div>
+<div class="container" style="margin-top: 4rem">
+	<div class="row">
+		<br><br>
+		<div class="col-md-12 text-center">Kabeers Notes is made possiable through work of many open source contributors and technologies</div>
+		
+		<br><br>
+		<br><br><hr><div class="col-md-12">
+			<ul class="ul nav">
+				
+			</ul>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	const base = 'assets/opensource/';
+	const Licences = 
+	[
+		{'href':"material-web","name":"Material Web Framework"},
+		{'href':"jquery","name":"Jquery JS"},
+		{'href':"cachepollyfills","name":"Google Cache PolyFill"},
+		{'href':"autosize","name":"Auto Size JS"}
+	]
+	for (var i = 0; i < Licences.length; i++) {
+		document.querySelector('ul').innerHTML += 
+		`<li class="my-2 border w-100 rounded py-3 px-2 bg-white">
+			<p>${Licences[i].name}</p>
+			<a href="${Licences[i].href}" class="link">${Licences[i].href}</a>
+		</li><hr>`;
+	}
+	document.querySelectorAll('.link').forEach(function (e) {
+		e.innerHTML = base+e.innerHTML+'.txt';
+		e.href = base+e.href+'.txt'
+	})
+</script>
+</body>
+</html>
