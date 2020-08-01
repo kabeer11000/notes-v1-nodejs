@@ -2,9 +2,9 @@ const express = require('express'),
     router = express.Router(),
     mongo = require('mongodb'),
     path = require('path'),
-    MongoClient = mongo.MongoClient,
-    url = "mongodb://127.0.0.1:27017/?readPreference=primary&gssapiServiceName=mongodb&appname=MongoDB%20Compass%20Community&ssl=false";
-
+    MongoClient = mongo.MongoClient;
+//var url = "mongodb://127.0.0.1:27017/?readPreference=primary&gssapiServiceName=mongodb&appname=MongoDB%20Compass%20Community&ssl=false";
+var url = 'mongodb+srv://kabeer11000:uganda123@kabeersnotes.dpgur.mongodb.net/test?retryWrites=true&w=majority';
 function k_hash(a) {
     return require('crypto').createHash('md5').update(a).digest("hex")
 }
