@@ -38,10 +38,19 @@ app.use(session({
   resave: true,
   saveUninitialized: true,
   store: new MongoStore({
+    url: 'mongodb+srv://kabeer11000:uganda123@kabeersnotes.dpgur.mongodb.net/test?retryWrites=true&w=majority'
+  })
+}));
+/*app.use(session({
+  secret: 'secret',
+  resave: true,
+  saveUninitialized: true,
+  store: new MongoStore({
     url: 'mongodb://127.0.0.1:27017/dictionary?readPreference=primary&gssapiServiceName=mongodb&appname=MongoDB%20Compass%20Community&ssl=false'
   })
 }));
-
+*/
+//mongodb+srv://kabeer11000:uganda123@kabeersnotes.dpgur.mongodb.net/test?retryWrites=true&w=majority
 app.use('/', indexRouter);
 app.use('/api', notesRouter);
 app.use('/account', accountRouter);
