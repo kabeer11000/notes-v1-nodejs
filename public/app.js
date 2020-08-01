@@ -846,7 +846,6 @@ search_input.on('keyup', () => {
         $('.search-container').append(`<div class="col-md-6 col-xl-4 col-xs-12 col-sm-6 mx-3 note pt-2 ${note.uniqid}" style="margin-top: 1.5rem!important;"><div class=" card border text-left h-100 w-100"><p class="header d-flex p-3" style="justify-content:space-around"><span class="d-none id">${note.uniqid}</span><span class="date">${note.date}</span><a href="#" class="listen-note material-icons" title="Listen to Note">volume_up</a><a onclick="deleteFromServer('${note.date}','${user_id}', '${note.uniqid}')" href="#" class="delete-note material-icons" title="Delete">delete</a></p><span class="note-Content p-4" onclick="this.contentEditable=true;$(this).closest('h3').remove()" onblur="this.contentEditable=false;contentEditableSaveHelperEle(this);" contenteditable="false"><h3>${heading}</h3><div class="pb-2"><p class="-show-read-more" style="word-wrap: break-word; white-space: pre-wrap;">${urlify(escapeHTML_r(note.content.substring(heading.length)))}</p></div></span></div></div>`);
     }
 });
-/*
 let swRegistration = undefined;
 if ('serviceWorker' in navigator && 'PushManager' in window) {
     navigator.serviceWorker.register('sw.js').then(function (swReg) {
@@ -857,7 +856,7 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
 // Then later, request a one-off sync:
 navigator.serviceWorker.ready.then(function (swRegistration) {
     return swRegistration.sync.register('bg-sync');
-});*/
+});
 getFromServer(user_id, renderNotes).then(() => {
     $('#preloader').remove();
 });
